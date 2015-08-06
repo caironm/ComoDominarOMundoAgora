@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Como Dominar o Mundo Agora</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans' rel='stylesheet' type='text/css'>
+  <!--link rel="stylesheet" type="text/css" href="clippy/build/clippy.css" media="all"-->
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <!-- Header and Nav -->
+
+  <div class="row">
+    <div class="twelve columns">
+      <div id="clara" class="panel corpo">
+        <div class="row">
+          <div class="six columns">
+            <h1 id="logo">Clara</h1>
+            <div id="led"></div>
+          </div>
+          <div class="six columns">
+            <div id="paleta" class="row">
+              <div class="two columns mobile-one sugar-hearts-you"></div>
+              <div class="two columns mobile-one party-confetti"></div>
+              <div class="two columns mobile-one sugar-champagne"></div>
+              <div class="two columns hide-for-small bursts-of-euphoria"></div>
+              <div class="two columns mobile-one happy-ballons"></div>
+            </div>
+          </div>
+        </div>
+        <h4 id="mensagem"></h4>
+      </div>
+      <br><br><br>
+      <div id="discuta"><a href="javascript:;">Discuta</a></div>
+      <div id="disqus_thread"></div>
+      <!-- div id="acao">
+        <a href="#" id="iniciar-curso" class="call-button">
+          <span>{ Aprender JavaScript; }</span>
+        </a>
+      </div -->
+    </div>
+  </div>
+
+  <div id="play"></div>
+  
+  
+
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/jquery.cookie.js"></script>
+  <script src="javascripts/jplayer/jquery.jplayer.js"></script>
+  <!--script src="clippy/build/clippy.min.js"></script-->
+  
+  <!-- DISQUS -->
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'clara-agora'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        $(function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+            $("#discuta").on("click", function () {
+              $("#disqus_thread").toggle();
+            });
+        });
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  <!-- / DISQUS -->
+  
+  <script src="javascripts/app.js"></script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36221790-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  
+</body>
+</html>
